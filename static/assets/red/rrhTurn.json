@@ -1,0 +1,52 @@
+{
+    "frames": {
+        "turn000.png": {
+            "frame": { "x": 0, "y": 0, "w": 80, "h": 80 },
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 80 },
+            "sourceSize": { "w": 80, "h": 80 },
+            "rotated": false,
+            "trimmed": false
+        },
+        "turn001.png": {
+            "frame": { "x": 80, "y": 0, "w": 80, "h": 80 },
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 80 },
+            "sourceSize": { "w": 80, "h": 80 },
+            "anchor": { "x": 40, "y": 40 }
+        },
+        "turn002.png": {
+            "frame": { "x": 160, "y": 0, "w": 80, "h": 80 },
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 80 },
+            "sourceSize": { "w": 80, "h": 80 },
+            "anchor": { "x": 40, "y": 40 }
+        },
+        "turn003.png": {
+            "frame": { "x": 240, "y": 0, "w": 80, "h": 80 },
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 80 },
+            "sourceSize": { "w": 80, "h": 80 },
+            "anchor": { "x": 40, "y": 40 }
+        },
+        "turn004.png": {
+            "frame": { "x": 320, "y": 0, "w": 80, "h": 80 },
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 80 },
+            "sourceSize": { "w": 80, "h": 80 },
+            "anchor": { "x": 40, "y": 40 }
+        }
+    },
+
+    "animations": {
+        "turn": [
+            "turn000.png",
+            "turn001.png",
+            "turn002.png",
+            "turn003.png",
+            "turn004.png"
+        ]
+    },
+
+    "meta": {
+        "image": "rrhTurn.png",
+        "format": "RGBA8888",
+        "size": { "w": 1520, "h": 80 },
+        "scale": "1"
+    }
+}

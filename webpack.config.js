@@ -55,6 +55,11 @@ module.exports = (env, argv) => {
             rules: [
                 {
                     test: /\.ts(x)?$/,
+                    loader: ['style-loader', 'css-loader'],
+                    exclude: /node_modules/
+                },
+                {
+                    test: /\.css$/,
                     loader: 'ts-loader',
                     exclude: /node_modules/
                 }

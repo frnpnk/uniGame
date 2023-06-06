@@ -1,19 +1,22 @@
-import { Application, Sprite } from 'pixi.js'
+import { Application } from 'pixi.js'
+import {RedHoodA} from './scenes/animations';
+import loadRRH from './scenes/animations';
 
 const app = new Application({
-	view: document.getElementById("pixi-canvas") as HTMLCanvasElement,
-	resolution: window.devicePixelRatio || 1,
-	autoDensity: true,
-	backgroundColor: 0x6495ed,
-	width: 640,
-	height: 480
+    view: document.getElementById("pixi-canvas") as HTMLCanvasElement,
+    resolution: window.devicePixelRatio || 1,
+    autoDensity: true,
+    backgroundColor: 0x6495ed,
+    width: innerWidth,
+    height: innerHeight
 });
 
-const clampy: Sprite = Sprite.from("clampy.png");
+loadRRH()
+console.log(RedHoodA.rIdle);
 
-clampy.anchor.set(0.5);
+RedHoodA.rIdle.position.set(250)
+RedHoodA.rIdle.play()
+RedHoodA.rIdle.scale.set(2)
+console.log(RedHoodA.rIdle);
 
-clampy.x = app.screen.width / 2;
-clampy.y = app.screen.height / 2;
-
-app.stage.addChild(clampy);
+app.stage.addChild(RedHoodA.rIdle)
